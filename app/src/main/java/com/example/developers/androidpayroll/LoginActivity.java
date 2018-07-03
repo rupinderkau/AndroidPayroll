@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 Login();
 
-
             }
         });
         signup.setOnClickListener(new View.OnClickListener()
