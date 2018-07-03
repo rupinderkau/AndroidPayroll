@@ -6,47 +6,55 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
     tools:context="com.example.developers.myapplication.Login_Activity">
-
-
     <TextView
-        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:id="@+id/txtvw"
+        android:text="SIGN IN"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edtUsername"
+        android:layout_margin="10dp"
+        android:hint="Enter Username or Email"
+        android:layout_below="@+id/txtvw"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edtPassword"
+        android:layout_margin="10dp"
+        android:hint="Enter Pasword"
+        android:layout_below="@+id/edtUsername"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:id="@+id/chkbk"
+        android:layout_below="@+id/edtPassword"
+        android:text="Remember Me"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="69dp"
-        android:text="USERNAME"
-        android:textSize="20dp"/>
+        android:layout_marginBottom="195dp"
+        android:layout_marginStart="134dp"
+        android:text="SIGN IN" />
 
-    <EditText
-        android:id="@+id/editText"
+    <Button
+        android:id="@+id/btnSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_marginStart="29dp"
-        android:layout_toEndOf="@+id/textView2"
-        android:ems="10"
-        android:hint="Enter the Username"
-        android:inputType="textEmailAddress" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="No account ? create new" />
+ -
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="24dp"
-        android:layout_toStartOf="@+id/editText"
-        android:text="TextView" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="13dp"
-        android:ems="10"
-        android:inputType="textPassword" />
 </RelativeLayout>
