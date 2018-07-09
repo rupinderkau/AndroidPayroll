@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.developers.androidpayroll.Employee_Payroll">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Employee Name" />
+
+    <EditText
+        android:id="@+id/birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="11dp"
+        android:hint="Enter Employee Birth Date"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:text="Vehicle Avialble?"
+        android:id="@+id/vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/birthdate"
+
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="11dp"/>
+    <RadioButton
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicle"
+        android:layout_alignStart="@+id/vehicle"
+        android:text="Car"/>
+
+    <RadioButton
+        android:id="@+id/motercycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/car"
+        android:layout_alignBottom="@+id/car"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/car"
+        android:text="Motercycle" />
+
+    <RadioButton
+        android:id="@+id/part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Intern"
+        android:layout_alignBottom="@+id/Intern"
+        android:layout_alignStart="@+id/car"
+        android:text="Part Time" />
+
+    <RadioButton
+        android:id="@+id/Intern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicle"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/vehicle"
+        android:text="Intern" />
+
+    <RadioButton
+        android:id="@+id/Full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Intern"
+        android:layout_alignBottom="@+id/Intern"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/Intern"
+        android:text="Full Time" />
+
+
+    <EditText
+        android:id="@+id/employeerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Enter Employee Hour Rate" />
+
+    <EditText
+        android:id="@+id/employeeworked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/employeerate"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Employee Worked Hours" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/employeeworked"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="19dp"
+        android:text="Is Percentage Commissioned Bases Part Time employee " />
+
+    <Button
+        android:id="@+id/savepayroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@color/colorPrimary"
+        android:text="Save Payroll" />
+
+    <EditText
+        android:id="@+id/commission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/savepayroll"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Enter Fixed Commission Amount"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>

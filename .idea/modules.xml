@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidPayroll.iml" filepath="$PROJECT_DIR$/AndroidPayroll.iml" />
+      <module fileurl="file://C:\Users\Developers\Desktop\AndroidPayroll-master\AndroidPayroll.iml" filepath="C:\Users\Developers\Desktop\AndroidPayroll-master\AndroidPayroll.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
