@@ -1,18 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context="com.example.developers.myapplication.MainActivity">
+<RelativeLayout
 
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+       >
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/edtEmpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Employee Name" />
+
+        <EditText
+            android:id="@+id/edtEmpBirthDate"
+            android:layout_width="match_parent"
+            android:layout_below="@id/edtEmpName"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Employee Birth Date" />
+
+        <CheckBox
+            android:id="@+id/chkveh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/edtEmpBirthDate"
+            android:text="Vehicle Available ?" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llvehtype"
+        android:layout_below="@+id/chkveh"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rgveh"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/rbcar"
+                android:text="Car"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/rbmotorcycle"
+                android:text="Motorcycle"
+                android:layout_height="wrap_content" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_below="@+id/llvehtype"
+            android:id="@+id/rgtime"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPartTime"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:text="Part Time" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/rgtime"
+                android:layout_margin="10dp"
+                android:id="@+id/linearpt"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtHourRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Employee Hour Rate" />
+
+                <EditText
+                    android:id="@+id/edtWorkedHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Employee Worked Hour" />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/chkCommission"
+                    android:layout_height="wrap_content"
+                    android:text="Is Percentage Commissioned Bases Part Time Employee ?" />
+
+                <EditText
+                    android:id="@+id/edtFixedAmount"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Fixed Commission Amount " />
+
+            </LinearLayout>
+
+
+
+            <RadioButton
+                android:id="@+id/rbIntern"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:text="Intern" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linearintern"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edtintern"
+                    android:hint="Enter Intern School Name"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <RadioButton
+                android:id="@+id/rbFullTime"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:text="Full Time" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearft"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Employee Salary"
+                    android:id="@+id/edtempsl"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/edtempbns"
+                    android:hint="Enter Employee Bonus"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RadioGroup>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnSavePayroll"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgtime"
+        android:text="Save Payroll" />
+</RelativeLayout>
+
+
+</ScrollView>
